@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- commands-executed: 
+- commands-executed: cd ../, cd /challenge/ , ./run , cd /usr/share/build-essential , /challenge/run
 - flag : pwn.college{gNaxNJitNowsnXxITXQLl64FESD.dZDN1QDLzETN0czW}
 
 ### Objective:
