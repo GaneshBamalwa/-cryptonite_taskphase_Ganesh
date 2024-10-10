@@ -3,7 +3,7 @@
 ## Table of Content
 
 - commands-executed: /challenge/challenge --printfile /challenge/DESCRIPTION.md , /challenge/challenge --printfile flag , ls , cd flag
-- flag :pwn.college{4-SxuGpQfhiDbbQzS8AFG8qXQlU.dFzN1QDLzETN0czW}
+- flag :pwn.college{47yEkawanBlRn63gTDWyqTqYcub.dVjM5QDLzETN0czW}
 
 
 
@@ -49,4 +49,4 @@ current-system  lock                      screen           systemd
 dojo            log                       sendsigs.omit.d  user
 hacker@man~learning-complex-usage:~/flag$ /challenge/challenge --printfile flag
 Correct argument! Here is the flag file:
-pwn.college{4-SxuGpQfhiDbbQzS8AFG8qXQlU.dFzN1QDLzETN0czW}
+pwn.college{47yEkawanBlRn63gTDWyqTqYcub.dVjM5QDLzETN0czW}
