@@ -7,7 +7,8 @@
 
 
 ### Output:
+```console
 hacker@permissions~changing-file-ownership:~$ chown hacker /flag
 hacker@permissions~changing-file-ownership:~$ cat /flag
 pwn.college{Qz9yiz2T-SYuzbqiC7GUxux7bqd.dFTM2QDLzETN0czW}
-
+```
