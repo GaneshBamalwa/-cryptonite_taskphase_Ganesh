@@ -7,6 +7,7 @@
 
 
 ### Output:
+```console
 hacker@permissions~permission-tweaking-practice:~$ /challenge/run
 Round 0 (of 8)!
 
@@ -300,3 +301,4 @@ hacker@permissions~permission-tweaking-practice:~$ cat /flag
 pwn.college{Ma3mzQxp_9BUK3KPTz7ZDWN3Gac.dBTM2QDLzETN0czW}
 
 
+```
