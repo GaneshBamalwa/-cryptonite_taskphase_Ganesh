@@ -7,6 +7,7 @@
 
 
 ### Output:
+```console
 hacker@chaining~executable-shell-scripts:~$ nano script.sh
 hacker@chaining~executable-shell-scripts:~$ ls
 1        a           flag          leap          output     x.sh
@@ -21,3 +22,4 @@ hacker@chaining~executable-shell-scripts:~$ chmod +x script.sh
 hacker@chaining~executable-shell-scripts:~$ ./script.sh 
 Congratulations on your shell script execution! Your flag:
 pwn.college{QOXkVPH5-46Et-AG-iWdUqtVnem.dRzNyUDLzETN0czW}
+```
