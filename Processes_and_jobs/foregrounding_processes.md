@@ -8,7 +8,7 @@
 
 ### Output:
 
-
+```console
 hacker@processes~foregrounding-processes:~$ /challenge/run
 To pass this level, you need to suspend me, resume the suspended process in the 
 background, and *then* foreground it without re-suspending it! You can 
@@ -28,5 +28,6 @@ I'll wait.
 hacker@processes~foregrounding-processes:~$ fg /challenge/run
 /challenge/run
 YES! Great job! I'm now running in the foreground. Hit Enter for your flag!
+```
 
 pwn.college{Q3sIKOa0m1OVEm1FI9xrtDN2Usm.dhDN4QDLzETN0czW}
