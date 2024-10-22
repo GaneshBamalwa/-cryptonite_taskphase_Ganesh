@@ -7,8 +7,13 @@
 
 
 ### Output:
+```console
+
 hacker@chaining~redirecting-script-output:~$ touch run.sh
 hacker@chaining~redirecting-script-output:~$ nano run.sh
 hacker@chaining~redirecting-script-output:~$ bash run.sh | /challenge/solve 
 Correct! Here is your flag:
 pwn.college{cZypZr5XknKzFXiWgUICEXFDQYt.dhTM5QDLzETN0czW}
+
+
+```
