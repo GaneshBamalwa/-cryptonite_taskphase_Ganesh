@@ -7,6 +7,7 @@
 
 
 ### Output:
+```console
 hacker@processes~listing-processes:~$ ps -ef
 UID          PID    PPID  C STIME TTY          TIME CMD
 root           1       0  0 04:40 ?        00:00:00 /sbin/docker-init -- /nix/var/nix/profiles/default/bin/dojo-init /run/dojo/bin/sleep 6h
@@ -37,3 +38,4 @@ hacker@processes~listing-processes:~$ /challenge/1061-run-10844
 Yahaha, you found me! Here is your flag:
 pwn.college{MqnK_7K9V8KnhbFZJ_B-GWQgYc1.dhzM4QDLzETN0czW}
 Now I will sleep for a while (so that you could find me with 'ps').
+```
