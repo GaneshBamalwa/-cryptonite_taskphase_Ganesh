@@ -7,7 +7,7 @@
 
 
 ### Output:
-
+```console
 hacker@users~cracking-passwords:~$ john /challenge/shadow-leak 
 Created directory: /home/hacker/.john
 Loaded 1 password hash (crypt, generic crypt(3) [?/64])
@@ -26,3 +26,4 @@ Password:
 zardus@users~cracking-passwords:/home/hacker$ /challenge/run 
 Congratulations, you have become Zardus! Here is your flag:
 pwn.college{Ig71oiuLl-fzoMtb8Vwa4A92o17.ddTN0UDLzETN0czW}
+```
