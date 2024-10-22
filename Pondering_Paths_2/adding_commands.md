@@ -7,7 +7,7 @@
 
 
 ### Output:
-
+```console
 hacker@path~adding-commands:~$ nano win.sh
 hacker@path~adding-commands:~$ chmod +x win.sh
 hacker@path~adding-commands:~$ ./win.sh
@@ -42,3 +42,4 @@ cat: /flag: Permission denied
 hacker@path~adding-commands:~$ /challenge/run 
 Invoking 'win'....
 pwn.college{M-Nwz6EUkc4Mgblz6OB8E6LJzln.dZzNyUDLzETN0czW}
+```
