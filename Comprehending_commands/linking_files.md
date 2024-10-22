@@ -10,5 +10,6 @@
 ### Output:
 ```console
 hacker@commands~linking-files:~$ ln -s /flag /home/hacker/not-the-flag
+pwn.college{YE0AALo0OxgTRJw3XRjHDIYC2ch.dlTM1UDLzETN0czW}
 
 ```
