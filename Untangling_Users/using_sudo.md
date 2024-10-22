@@ -7,7 +7,7 @@
 
 
 ### Output:
-
+```console
 hacker@users~using-sudo:~$ ls
 1        PWN         college  flag1         leap          not-the-flah
 COLLEGE  a           f        instructions  myflag        output
@@ -23,3 +23,4 @@ hacker@users~using-sudo:~$ cat /flag
 cat: /flag: Permission denied
 hacker@users~using-sudo:~$ sudo cat /flag
 pwn.college{whXdKssfoQntRoiUJeC8Dx3d47t.dhTN0UDLzETN0czW}
+```
