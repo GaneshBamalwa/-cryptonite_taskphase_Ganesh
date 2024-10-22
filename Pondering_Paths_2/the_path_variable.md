@@ -7,7 +7,7 @@
 
 
 ### Output:
-
+```console
 hacker@path~the-path-variable:~$ cd ../../
 hacker@path~the-path-variable:/$ cd /challenge/
 hacker@path~the-path-variable:/challenge$ 
@@ -19,3 +19,4 @@ Trying to remove /flag...
 /challenge/run: line 4: rm: No such file or directory
 The flag is still there! I might as well give it to you!
 pwn.college{wyxJSjohdHI3GfewOsJLg41BrZX.dZzNwUDLzETN0czW}
+```
