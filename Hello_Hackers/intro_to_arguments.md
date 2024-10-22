@@ -8,7 +8,7 @@
 
 
 
-###Output:
+### Output:
 ```console
 hacker@hello~intro-to-arguments:~$ hello hackers
 Success! Here is your flag:
