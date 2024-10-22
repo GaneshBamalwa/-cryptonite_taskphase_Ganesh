@@ -7,7 +7,7 @@
 
 
 ### Output:
-
+```console
 hacker@processes~resuming-processes:~$ /challenge/run 
 Let's practice resuming processes! Suspend me with Ctrl-Z, then resume me with 
 the 'fg' command! Or just press Enter to quit me!
@@ -18,3 +18,4 @@ hacker@processes~resuming-processes:~$ fg /challenge/run
 I'm back! Here's your flag:
 pwn.college{wvfil02Ddh5xX0aJ3bdIFbuf8Mp.dZDN4QDLzETN0czW}
 Don't forget to press Enter to quit me!
+```
