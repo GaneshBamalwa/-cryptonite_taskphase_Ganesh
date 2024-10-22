@@ -7,7 +7,7 @@
 
 
 ### Output:
-
+```console
 hacker@processes~backgrounding-processes:~$ /challenge/run
 I'll only give you the flag if there's already another copy of me running *and 
 not suspended* in this terminal... Let's check!
@@ -45,4 +45,4 @@ root         770 R+   ps -o user=UID,pid,stat,cmd
 Yay, I found another version of me running in the background! Here is the flag:
 pwn.college{Y2yqgtjRUgj_oOGV7QTYy05bjM-.ddDN4QDLzETN0czW}
 hacker@processes~backgrounding-processes:~$ 
-
+```
