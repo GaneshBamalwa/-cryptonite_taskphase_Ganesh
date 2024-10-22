@@ -7,6 +7,7 @@
 
 
 ### Output:
+```console
 hacker@permissions~permissions-setting-practice:~$ /challenge/run
 Round 0 (of 8)!
 
@@ -247,3 +248,4 @@ Current permissions of "/flag": ---------
 hacker@permissions~permissions-setting-practice:~$ chmod u+r /flag 
 hacker@permissions~permissions-setting-practice:~$ cat /flag 
 pwn.college{k70iB4KafnR-mHzEtP9e2cHlJ5K.dNTM5QDLzETN0czW}
+```
