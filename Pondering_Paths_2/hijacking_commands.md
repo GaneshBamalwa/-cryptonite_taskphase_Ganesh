@@ -7,7 +7,7 @@
 
 
 ### Output:
-
+```console
 hacker@path~hijacking-commands:~$ chmod +x rm
 hacker@path~hijacking-commands:~$ ./rm
 cat: /flag: Permission denied
@@ -21,3 +21,4 @@ hacker@path~hijacking-commands:~$ /usr/bin/nano rm
 hacker@path~hijacking-commands:~$ /challenge/run
 Trying to remove /flag...
 pwn.college{8_HBlRqCFQGtq6LPG4Opu2_PGyr.ddzNyUDLzETN0czW}
+```
