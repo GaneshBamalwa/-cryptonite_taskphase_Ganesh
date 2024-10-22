@@ -6,15 +6,8 @@
 - flag :pwn.college{E7C3ZA0jdeOrjeaHxEZ8-lEa44_.dhTN1QDLzETN0czW}
 
 
-
-
-### Objective:
-
-There are multiple ways to access variables in bash. echo was just one of them, and we'll now learn at least one more in this challenge.
-
-Try the env command: it'll print out every exported variable set in your shell, and you can look through that output to find the FLAG variable!
-
 ### Output:
+```console
 
 hacker@variables~printing-exported-variables:~$ env
 SHELL=/run/dojo/bin/bash
@@ -46,3 +39,5 @@ XDG_DATA_DIRS=/nix/store/14x11ifwhnw8fhjdxs94q7hivhdqslgx-xfce4-terminal-1.1.3/s
 PATH=/run/challenge/bin:/run/workspace/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 DBUS_SESSION_BUS_ADDRESS=unix:path=/tmp/dbus-nH79jM6mzg,guid=ccfb0c030f6c0a61d7baa9016707cfd6
 _=/run/workspace/bin/env
+
+```
