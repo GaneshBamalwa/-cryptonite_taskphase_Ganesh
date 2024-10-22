@@ -6,17 +6,8 @@
 - flag :pwn.college{sEKYZEoHD0CCMtfNfs2I3LZMXhn.dhTM4QDLzETN0czW}
 
 
-
-### Objective:
-You know how to run commands, how to redirect their output (e.g., >), and how to search through the resulting file (e.g., grep). Let's put this together!
-
-In preparation for more complex levels, we want you to:
-
-Redirect the output of /challenge/run to /tmp/data.txt.
-This will result in a hundred thousand lines of text, with one of them being the flag, in /tmp/data.txt.
-Grep that for the flag!
-
 ### Output:
+```console
 hacker@piping~grepping-stored-results:~$ /challenge/run > /tmp/data.txt
 [INFO] WELCOME! This challenge makes the following asks of you:
 [INFO] - the challenge will check that output is redirected to a specific file path : /tmp/data.txt
@@ -39,3 +30,4 @@ hacker@piping~grepping-stored-results:~$ grep pwn.college /tmp/d
 data.txt         dbus-FSj5ZlAI5C  
 hacker@piping~grepping-stored-results:~$ grep pwn.college /tmp/data.txt 
 pwn.college{sEKYZEoHD0CCMtfNfs2I3LZMXhn.dhTM4QDLzETN0czW}
+```
