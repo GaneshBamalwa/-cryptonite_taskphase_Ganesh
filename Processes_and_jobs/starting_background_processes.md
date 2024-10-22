@@ -7,7 +7,7 @@
 
 
 ### Output:
-
+```console
 hacker@processes~starting-backgrounded-processes:~$ /challenge/run &
 [1] 389
 hacker@processes~starting-backgrounded-processes:~$ 
@@ -18,3 +18,4 @@ overlap weirdly with the shell prompt, but you're used to that by now...
 
 Anyways! Here is your flag!
 pwn.college{MGeX_IvifSznrFwFO3kTCK9u8_7.dlDN4QDLzETN0czW}
+```
