@@ -7,7 +7,9 @@
 
 
 ### Output:
+```console
 hacker@permissions~groups-and-files:~$ chgrp hacker /flag
 hacker@permissions~groups-and-files:~$ cat /flag
 pwn.college{40jrwdB-W2YCWti15879AHmWpHF.dFzNyUDLzETN0czW}
 
+```
