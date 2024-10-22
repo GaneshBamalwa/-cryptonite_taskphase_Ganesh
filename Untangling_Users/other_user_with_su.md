@@ -7,8 +7,10 @@
 
 
 ### Output:
+```console
 hacker@users~other-users-with-su:~$ su zardus
 Password: 
 zardus@users~other-users-with-su:/home/hacker$ /challenge/run 
 Congratulations, you have become Zardus! Here is your flag:
 pwn.college{4KyXg6xxajEqctKjWE3unaqGCx0.dZTN0UDLzETN0czW}
+```
