@@ -7,8 +7,12 @@
 
 
 ### Output:
+```console
+
 hacker@chaining~your-first-shell-script:~$ cat x.sh 
 /challenge/pwn ; /challenge/college
 hacker@chaining~your-first-shell-script:~$ bash x.sh
 Great job, you've written your first shell script! Here is the flag:
 pwn.college{c6Ac4U3g0FrYNZr0muYzUilboEZ.dFzN4QDLzETN0czW}
+
+```
