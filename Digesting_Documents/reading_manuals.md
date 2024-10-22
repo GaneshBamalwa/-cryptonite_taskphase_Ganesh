@@ -7,10 +7,9 @@
 
 
 
-### Objective:
-
 
 ### Output:
+```console
 hacker@man~reading-manuals:~$ man challenge
 
 CHALLENGE(1)                  Challenge Commands                  CHALLENGE(1)
@@ -39,3 +38,4 @@ hacker@man~reading-manuals:~$ /challenge/challenge --owtyse NUM
 Incorrect usage! Please read the challenge man page!
 hacker@man~reading-manuals:~$ /challenge/challenge --owtyse 014
 Correct usage! Your flag: pwn.college{IJowt014CyXG3Dse2bVnk76xPNr.dRTM4QDLzETN0czW}
+```
