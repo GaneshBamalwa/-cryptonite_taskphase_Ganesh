@@ -5,12 +5,10 @@
 - commands-executed: cd ../../ , ./challenge --help , ./challenge -p , ./challenge -g 87
 - flag :pwn.college{0kYROjX8pg7_yVkXcjy7IvbVQ9e.ddjM4QDLzETN0czW}
 
-### Objective:
-Some programs don't have a man page, but might tell you how to run them if invoked with a special argument. Usually, this argument is --help, but it can often be -h or, in rare cases, -?, help, or other esoteric values like /? (though that latter is more frequently encountered on Windows).
 
-In this level, you will practice reading a program's documentation with --help. Try it out!
 
 ### Output:
+```console
 hacker@man~helpful-programs:~$ cd ../../
 hacker@man~helpful-programs:/$ ls
 bin   challenge  etc   home  lib32  libx32  mnt  opt   root  sbin  sys  usr
@@ -39,3 +37,4 @@ hacker@man~helpful-programs:/challenge$ ./challenge -p
 The secret value is: 87
 hacker@man~helpful-programs:/challenge$ ./challenge -g 87
 Correct usage! Your flag: pwn.college{0kYROjX8pg7_yVkXcjy7IvbVQ9e.ddjM4QDLzETN0czW}
+```
