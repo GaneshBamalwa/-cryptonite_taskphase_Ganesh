@@ -21,6 +21,7 @@
 - str w0, [x29, 44]: w0 is the 32-bit space for x0, 32 bits as ato` returns a string of size 4 bytes.`x29 is typically used as the frame pointer register, basically the address where it is being stored.
 - bl func - now it loads x0 and calls the function. We need to figure out what the function does.
 
+
   ```assembly
   sub     sp, sp, #32       ; creating space in the stack
   str     w0, [sp, 12]      ; storing the value of w0 12 bits above the stack pointer
@@ -65,7 +66,7 @@
   add     x0, x0, :lo12:.LC0
   bl      puts
   b       .L6
-
+-we got what we needed i.e 3370 now just convert it into hexadecimal 32 bit and we have our answer 0x00000D2A
  
 #### Output:
 ```console
