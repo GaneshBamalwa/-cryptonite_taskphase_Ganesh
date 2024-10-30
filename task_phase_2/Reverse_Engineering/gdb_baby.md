@@ -14,7 +14,7 @@
 - Application Binary Interface: an agreement with the processors of the registers which will contain different values for the program.
 - Okay what we are looking for is for a register eax which has some hex memory address i need to find that address and convert it to decimal.
 - We start with objdump -d to disassemble the entire file and try to find a register eax.
-- There is only one string associatewd with eax with hex value "$0x86342,%eax"
+- There is only one string associated with eax with hex value "$0x86342,%eax"
 - we convert 0x86342 to decimal which gives 549698 , which is the flag.
 
 
