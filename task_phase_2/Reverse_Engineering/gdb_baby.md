@@ -18,6 +18,7 @@
 - we convert 0x86342 to decimal which gives 549698 , which is the flag.
 
 
+
 #### Output:
 ```console
 ┌──(anonymous㉿Anonymous)-[~/Downloads]
