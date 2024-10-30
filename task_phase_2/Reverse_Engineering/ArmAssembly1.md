@@ -17,39 +17,39 @@
 -bl      atoi : used man atoi to know about the command : converts ascii to integers for the programs.
 -str     w0, [x29, 44] : so w0 is the 32 bit space for x0 , 32 bits as atoi returns a string which is of size 4 bytes. x29 is typically used as the frame pointer register basically thea ddress where it is being stored.
 -bl      func now it loads x0 and calls the function. we need to figure out what the function does.
-        sub     sp, sp, #32    ; creating space in the stack
-        str     w0, [sp, 12]   ; storing the value of w0 12 bits above the stack pointer
-        mov     w0, 79         ; okay so this is where w0 is being assigned the value 79. 
-        str     w0, [sp, 16]   ; we have another argument for this at sp+16 79
-        mov     w0, 7          ; we give w0 = 7 
-        str     w0, [sp, 20]   ; store it at sp+20
-        mov     w0, 3          ; wo = 3 and store it at sp+24
-        str     w0, [sp, 24]
-        ldr     w0, [sp, 20]   ;w0 = value at sp+20 = 7
-        ldr     w1, [sp, 16]   ;w1 = value at sp+16 = 79
-        lsl     w0, w1, w0     ; okay so we are perfoming a left shift , the syntax is : lsl destination, source , amount of shift ; in this case its lsl 7 79 7 meaning we shift 79 to the left by 7 bits and store it in w0. so 79 shifted left by 7 bits is 10032. 
-        str     w0, [sp, 28]   ; wo =10112 is now at sp+28
-        ldr     w1, [sp, 28]   ; w1 = 10112
-        ldr     w0, [sp, 24]   ; w0 = 3
-        sdiv    w0, w1, w0     ; sdiv - signed division , syntax sdiv destination , dividend , divisor ; essentially 10032%3 = 3344 stored in w0 
-        str     w0, [sp, 28]   ; now where 10032 was stored , 3370 is stored.
-        ldr     w1, [sp, 28]   ; w1 = 3370 
-        ldr     w0, [sp, 12]   ; okay so the value at sp+12 is the value which is passed to the function which i need to figure out lets say its x
-        sub     w0, w1, w0     ; so we subtract w1-w0 ans store the result in w0 ; w0 = 3344 -x
-        str     w0, [sp, 28]   ; sp+28 = 3370-x 
-        ldr     w0, [sp, 28]   ; w0 = 3370-x
-        add     sp, sp, 32     
-        ret                    ; returns 3370-x. 
-        .size   func, .-func
-        .section        .rodata
-        .align  3
+        -sub     sp, sp, #32    ; creating space in the stack
+        -str     w0, [sp, 12]   ; storing the value of w0 12 bits above the stack pointer
+        -mov     w0, 79         ; okay so this is where w0 is being assigned the value 79. 
+        -str     w0, [sp, 16]   ; we have another argument for this at sp+16 79
+        -mov     w0, 7          ; we give w0 = 7 
+        -str     w0, [sp, 20]   ; store it at sp+20
+        -mov     w0, 3          ; wo = 3 and store it at sp+24
+        -str     w0, [sp, 24]
+        -ldr     w0, [sp, 20]   ;w0 = value at sp+20 = 7
+        -ldr     w1, [sp, 16]   ;w1 = value at sp+16 = 79
+        -lsl     w0, w1, w0     ; okay so we are perfoming a left shift , the syntax is : lsl destination, source , amount of shift ; in this case its lsl 7 79 7 meaning we shift 79 to the left by 7 bits and store it in w0. so 79 shifted left by 7 bits is 10032. 
+        -str     w0, [sp, 28]   ; wo =10112 is now at sp+28
+        -ldr     w1, [sp, 28]   ; w1 = 10112
+        -ldr     w0, [sp, 24]   ; w0 = 3
+        -sdiv    w0, w1, w0     ; sdiv - signed division , syntax sdiv destination , dividend , divisor ; essentially 10032%3 = 3344 stored in w0 
+        -str     w0, [sp, 28]   ; now where 10032 was stored , 3370 is stored.
+        -ldr     w1, [sp, 28]   ; w1 = 3370 
+        -ldr     w0, [sp, 12]   ; okay so the value at sp+12 is the value which is passed to the function which i need to figure out lets say its x
+        -sub     w0, w1, w0     ; so we subtract w1-w0 ans store the result in w0 ; w0 = 3344 -x
+        -str     w0, [sp, 28]   ; sp+28 = 3370-x 
+        -ldr     w0, [sp, 28]   ; w0 = 3370-x
+        -add     sp, sp, 32     
+        -ret                    ; returns 3370-x. 
+        -.size   func, .-func
+        -.section        .rodata
+        -.align  3
 - Main program after return :
-        cmp     w0, 0          ; it compares the 2 value and sets flags accordingly  - w0 == 0 ,zero flag set , w0<0 zero flag is clear negative is set , w0>0 zero is clear negative is clear.
-        bne     .L4            ; branch if not equal i.e : if w0!=0 it ll run .L4 , .l4 runs the you lose output so to continue to L0 which is for you win , i need 3370-x = 0 , i.e x = 3370
-        adrp    x0, .LC0       
-        add     x0, x0, :lo12:.LC0
-        bl      puts
-        b       .L6
+        -cmp     w0, 0          ; it compares the 2 value and sets flags accordingly  - w0 == 0 ,zero flag set , w0<0 zero flag is clear negative is set , w0>0 zero is clear negative is clear.
+        -bne     .L4            ; branch if not equal i.e : if w0!=0 it ll run .L4 , .l4 runs the you lose output so to continue to L0 which is for you win , i need 3370-x = 0 , i.e x = 3370
+        -adrp    x0, .LC0       
+        -add     x0, x0, :lo12:.LC0
+        -bl      puts
+        -b       .L6
 
 
 
