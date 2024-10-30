@@ -8,7 +8,7 @@
 
 ### Chain of thought / Learning:
 - Since I have no idea what I am dealing with, better to start with accumulating basic knowledge about reverse engineering and assembly.
-- In assembly we have an instruction which i followed by parameters or arguments for that instruction.
+- In assembly we have an instruction which is followed by parameters or arguments for that instruction.
 - We can start by using strings command to get rough idea of what we are dealing with, but to understand better we need machine code.
 - Disassembler: objdump, -d for disassemble
 - Application Binary Interface: a agreement with the processors of the registers which will contain different values for the program.
