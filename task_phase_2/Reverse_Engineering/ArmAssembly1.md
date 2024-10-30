@@ -9,7 +9,7 @@
 ### Chain of thought / Learning:
 - We are again dealing with assembly files, so what I'm gonna start with is strings command to get a rough image.
 - Then I am gonna use a disassembler objdump to get a better idea of what the program is about.
-- Okay, for some reason `objdump` command is not working. So the deal is objdump cannot disassemble assembly files; I'm gonna need to convert it into bytecode, which is easy since I havegcc. gcc keeps showing errors.
+- Okay, for some reason objdump command is not working. So the deal is objdump cannot disassemble assembly files; I'm gonna need to convert it into bytecode, which is easy since I havegcc. gcc keeps showing errors.
 - Watching the YouTube video given in the PDF, I need to know about the basics of assembly language.
 - **Command Line Arguments in C**: Command-line arguments are the values given after the name of the program in the command-line shell of Operating Systems. 
   - argc - number of command-line arguments
