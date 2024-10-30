@@ -7,19 +7,19 @@
 
 
 ### Chain of thought / Learning:
-- We are again dealing with assembly files, so what I'm gonna start with is `strings` command to get a rough image.
-- Then I am gonna use a disassembler (`objdump`) to get a better idea of what the program is about.
-- Okay, for some reason `objdump` command is not working. So the deal is `objdump` cannot disassemble assembly files; I'm gonna need to convert it into bytecode, which is easy since I have `gcc`. `gcc` keeps showing errors.
+- We are again dealing with assembly files, so what I'm gonna start with is strings command to get a rough image.
+- Then I am gonna use a disassembler objdump to get a better idea of what the program is about.
+- Okay, for some reason `objdump` command is not working. So the deal is objdump cannot disassemble assembly files; I'm gonna need to convert it into bytecode, which is easy since I havegcc. gcc keeps showing errors.
 - Watching the YouTube video given in the PDF, I need to know about the basics of assembly language.
 - **Command Line Arguments in C**: Command-line arguments are the values given after the name of the program in the command-line shell of Operating Systems. 
-  - `argc` - number of command-line arguments
-  - `argv` - argument vector pointing to those values.
-  - `argv[0]` is always the name of the program; the rest are the values passed to the main function.
-- `ldr x0, [x29, 16]` - this line loads a register `x0` (`argv[0]`) to the memory address of `x29`. Importance of `x0`: whenever you call the function, the first argument called resides in `x0`.
-- `add x0, x0, 8` - this is basically moving to the next argument in the `argv`, and the `ldr x0` is loading it to the register `x0`. `8` is the width of a 64-bit pointer.
-- `bl atoi`: used `man atoi` to know about the command - converts ASCII to integers for the program.
-- `str w0, [x29, 44]`: `w0` is the 32-bit space for `x0`, 32 bits as `atoi` returns a string of size 4 bytes. `x29` is typically used as the frame pointer register, basically the address where it is being stored.
-- `bl func` - now it loads `x0` and calls the function. We need to figure out what the function does.
+  - argc - number of command-line arguments
+  - argv - argument vector pointing to those values.
+  - argv[0] is always the name of the program; the rest are the values passed to the main function.
+- -ldr x0, [x29, 16] - this line loads a register x0 argv[0] to the memory address of x29. Importance of x0: whenever you call the function, the first argument called resides in x0.
+- add x0, x0, 8 - this is basically moving to the next argument in the argv, and the ldr x0 is loading it to the register x0. 8 is the width of a 64-bit pointer.
+- bl atoi: used man atoi to know about the command - converts ASCII to integers for the program.
+- str w0, [x29, 44]: w0 is the 32-bit space for x0, 32 bits as ato` returns a string of size 4 bytes.`x29 is typically used as the frame pointer register, basically the address where it is being stored.
+- bl func - now it loads x0 and calls the function. We need to figure out what the function does.
 
   ```assembly
   sub     sp, sp, #32       ; creating space in the stack
